@@ -1,0 +1,183 @@
+/* =====================================
+   AVIZEN – ADMIN DASHBOARD (PREMIUM)
+   Layout same, colors & styling upgraded
+   ===================================== */
+
+.admin-page {
+    margin-top: 15vh;
+    height: fit-content;
+
+    /* Dark background to match other pages */
+    background: radial-gradient(circle at top,
+        #020617 0%,
+        #020617 40%,
+        #0b1120 80%,
+        #020617 100%);
+    padding-bottom: 8vh;
+}
+
+/* TOP CARDS GRID */
+
+.admin-page-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+/* EACH ADMIN CARD */
+.admin-card {
+    padding: 3vh 2vw;
+    text-align: center;
+    width: 20vw;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /* Glass dark tile */
+    background: radial-gradient(circle at top left,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.9));
+    border-radius: 0.9rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.95);
+
+    color: #e5e7eb;
+    transition: all 0.25s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 28px 70px rgba(15, 23, 42, 0.9);
+}
+
+.admin-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #e0f2fe;
+}
+
+.admin-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #cbd5f5;
+}
+
+/* REQUESTS CONTAINER */
+
+.admin-requests-container {
+    margin: 10vh 0 3vh 3vw;
+    width: 70%;
+    padding: 2vh 2vw;
+
+    /* Glass panel */
+    background: radial-gradient(circle at top left,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.9));
+    border-radius: 0.9rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.95);
+}
+
+.admin-requests-container h3 {
+    color: #e0f2fe;
+    margin-bottom: 1rem;
+}
+
+/* REQUESTS LIST */
+
+.admin-requests {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4vh;
+    height: 30vh;
+    overflow-y: scroll;
+    margin-left: 2vw;
+    padding-right: 10px;
+}
+
+/* Single request row */
+.admin-request {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    background-color: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.5);
+
+    padding: 15px 25px;
+    margin-right: 10px;
+    border-radius: 0.8rem;
+
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.85);
+}
+
+.admin-request span {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-request span b {
+    font-weight: 700;
+    color: #e5f0ff;
+}
+
+.admin-request span p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cbd5f5;
+}
+
+/* ACTION BUTTONS */
+
+.admin-request-actions {
+    display: flex;
+    gap: 30px;
+}
+
+.admin-request-actions button {
+    width: 7rem;
+    height: 40px;
+
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    color: #f9fafb;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.4);
+    transition: all 0.22s ease-in-out;
+}
+
+.admin-request-actions button:hover {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    transform: translateY(-1px);
+    box-shadow: 0 16px 40px rgba(56, 189, 248, 0.55);
+}
+
+.admin-request-actions button:active {
+    transform: scale(0.97);
+    box-shadow: 0 10px 24px rgba(56, 189, 248, 0.45);
+}
+
+/* Optional: scrollbar styling */
+.admin-requests::-webkit-scrollbar {
+    width: 6px;
+}
+.admin-requests::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.7);
+    border-radius: 10px;
+}
+.admin-requests::-webkit-scrollbar-track {
+    background: transparent;
+}

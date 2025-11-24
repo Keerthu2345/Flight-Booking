@@ -1,0 +1,11 @@
+/* ===========================
+   AVIZEN APP LAYOUT SHELL
+   =========================== */
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: transparent; /* body background from index.css */
+  display: block;
+}

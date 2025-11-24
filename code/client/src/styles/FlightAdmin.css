@@ -1,0 +1,45 @@
+/* =====================================
+   AVIZEN – FLIGHT ADMIN PAGE (PREMIUM)
+   Layout same, styling upgraded
+   ===================================== */
+
+.flightAdmin-page{
+    padding-top: 15vh;
+    height: 100vh;
+
+    /* Dark background like other admin pages */
+    background: radial-gradient(circle at top,
+        #020617 0%,
+        #020617 40%,
+        #0b1120 80%,
+        #020617 100%);
+}
+
+/* NOT APPROVED BOX */
+
+.notApproved-box{
+    width: 60%;
+    text-align: center;
+    margin: 30vh 20%;
+    padding: 4vh 4vw;
+
+    /* Glass dark panel */
+    background: radial-gradient(circle at top left,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.9));
+    border-radius: 0.9rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.95);
+}
+
+.notApproved-box h3{
+    color: #fecaca;           /* soft red text */
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.notApproved-box p{
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,144 @@
+/* ===========================
+   AVIZEN BOOK FLIGHT PAGE – PREMIUM THEME
+   Layout same, styling upgraded
+   =========================== */
+
+.BookFlightPage{
+    width: 100%;
+    height: fit-content;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+
+    display: flex;
+    justify-content: center;
+
+    /* Dark background to match landing/auth */
+    background: radial-gradient(circle at top,
+        #020617 0%,
+        #020617 40%,
+        #0b1120 75%,
+        #020617 100%);
+}
+
+/* MAIN BOOKING CARD */
+
+.BookingFlightPageContainer{
+    width: 44%;
+
+    /* Glass dark card */
+    background: radial-gradient(circle at top left,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.9));
+    padding: 2vh 2%;
+
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.95);
+    border-radius: 0.7rem;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+}
+
+.BookingFlightPageContainer h2{
+    margin: 0;
+    margin-bottom: 5vh;
+    text-align: center;
+
+    color: #e0f2fe;
+    font-size: 1.6rem;
+    letter-spacing: 0.03em;
+}
+
+.BookingFlightPageContainer p{
+    margin: 0;
+    margin-bottom: 5px;
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}
+
+.BookingFlightPageContainer p b{
+    font-weight: 600;
+    color: #e5f0ff;
+}
+
+/* GRID SECTIONS (LAYOUT SAME) */
+
+.BookingFlightPageContainer span{
+    display: grid;
+    grid-template-columns: 64% 33%;
+    gap: 3%;
+}
+
+.BookingFlightPageContainer .span3{
+    display: grid;
+    grid-template-columns: 31.3% 31.3% 31.3%;
+    gap: 3%;
+}
+
+/* BUTTON – CENTERED + PREMIUM COLOR */
+
+.BookingFlightPageContainer button{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 25px;
+
+    height: 45px;
+    border-radius: 999px;
+    border: none;
+
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    color: #f9fafb;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+
+    box-shadow: 0 14px 35px rgba(56, 189, 248, 0.45);
+    transition: all 0.22s ease-in-out;
+}
+
+.BookingFlightPageContainer button:hover{
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    transform: translateY(-1px);
+    box-shadow: 0 18px 45px rgba(56, 189, 248, 0.55);
+}
+
+.BookingFlightPageContainer button:active{
+    transform: scale(0.97);
+    box-shadow: 0 10px 28px rgba(56, 189, 248, 0.4);
+}
+
+/* NOTES / LIST ITEMS */
+
+.BookingFlightPageContainer li{
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* NEW PASSENGER SECTION */
+
+.new-passenger h4{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0f2fe;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.new-passenger-inputs{
+    display: grid;
+    grid-template-columns: 67% 30%;
+    gap: 3%;
+}
+
+.new-passenger-inputs select{
+    padding-left: 12px;
+    height: 40px;
+
+    background-color: rgba(15, 23, 42, 0.98);
+    color: #e5e7eb;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(148, 163, 184, 0.85);
+}
+
+.new-passenger-inputs select:focus{
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.9);
+}           

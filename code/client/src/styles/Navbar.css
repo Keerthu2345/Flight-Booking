@@ -1,0 +1,111 @@
+/* ===========================
+   AVIZEN NAVBAR
+   =========================== */
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5vw;
+
+  /* Premium glassy dark background */
+  background: radial-gradient(circle at top left, #0f172a 0, #020617 55%, #020617 100%);
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
+}
+
+/* Brand text: AviZen / AviZen Admin / AviZen Operator */
+.navbar h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+/* If you later add an icon span inside h3, it will look neat */
+.navbar h3 span {
+  font-size: 1.25rem;
+}
+
+/* Right menu container */
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+/* Navbar links */
+.nav-options p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: rgba(226, 232, 240, 0.78);
+  cursor: pointer;
+  position: relative;
+
+  transition: color 0.2s ease-out, transform 0.18s ease-out;
+}
+
+/* Underline / glow on hover */
+.nav-options p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  transition: width 0.22s ease-out;
+}
+
+.nav-options p:hover {
+  color: #f9fafb;
+  transform: translateY(-1px);
+}
+
+.nav-options p:hover::after {
+  width: 100%;
+}
+
+/* Small screens – keep it neat */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 4vw;
+    height: 64px;
+  }
+
+  .navbar h3 {
+    font-size: 1.05rem;
+    letter-spacing: 0.16em;
+  }
+
+  .nav-options {
+    gap: 1.1rem;
+  }
+
+  .nav-options p {
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+  }
+}

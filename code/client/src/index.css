@@ -1,0 +1,155 @@
+/* ===========================
+   AVIZEN GLOBAL THEME
+   =========================== */
+
+:root {
+  /* Brand colors */
+  --avizen-bg: #020617;                 /* Main page background */
+  --avizen-surface: rgba(15, 23, 42, 0.96);
+  --avizen-surface-soft: rgba(15, 23, 42, 0.9);
+  --avizen-accent: #0ea5e9;             /* Sky blue accent */
+  --avizen-accent-soft: rgba(56, 189, 248, 0.18);
+  --avizen-border-subtle: rgba(148, 163, 184, 0.35);
+  --avizen-text-main: #e5e7eb;
+  --avizen-text-muted: #9ca3af;
+  --avizen-danger: #ef4444;
+
+  /* Radii & shadows */
+  --avizen-radius-lg: 18px;
+  --avizen-radius-xl: 24px;
+  --avizen-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.85);
+  --avizen-shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.65);
+
+  /* Transitions */
+  --avizen-transition-fast: 0.18s ease-out;
+  --avizen-transition-med: 0.24s ease-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(
+    circle at top,
+    #020617 0,
+    #020617 40%,
+    #020617 100%
+  );
+  color: var(--avizen-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Headings & text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--avizen-text-main);
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
+
+p {
+  color: var(--avizen-text-muted);
+  margin-top: 0;
+}
+
+/* Page shell helper – you can use this on pages if needed */
+
+.page-root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5.5rem 4vw 3rem 4vw; /* space for navbar */
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Card look – upgrades any .card (Bootstrap or custom) */
+
+.card {
+  background: var(--avizen-surface);
+  border-radius: var(--avizen-radius-lg);
+  border: 1px solid var(--avizen-border-subtle);
+  box-shadow: var(--avizen-shadow-soft);
+  color: var(--avizen-text-main);
+}
+
+/* Primary button – soft override for Bootstrap .btn-primary */
+
+.btn-primary {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  border: 1px solid rgba(56, 189, 248, 0.75);
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding-inline: 1.6rem;
+  padding-block: 0.55rem;
+  box-shadow: 0 14px 30px rgba(56, 189, 248, 0.35);
+  transition:
+    transform var(--avizen-transition-fast),
+    box-shadow var(--avizen-transition-fast),
+    background var(--avizen-transition-fast),
+    border-color var(--avizen-transition-fast);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  box-shadow: 0 18px 40px rgba(56, 189, 248, 0.55);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.4);
+}
+
+/* Danger button – keep red, just make pill-shaped */
+
+.btn-danger {
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Small muted helper text */
+
+.text-muted-soft {
+  color: var(--avizen-text-muted);
+  font-size: 0.82rem;
+}
+
+/* Reusable pill badge */
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid var(--avizen-border-subtle);
+  background: rgba(15, 23, 42, 0.92);
+  color: var(--avizen-text-main);
+}

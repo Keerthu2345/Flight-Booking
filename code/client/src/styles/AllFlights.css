@@ -1,0 +1,115 @@
+/* =====================================
+   AVIZEN – ALL FLIGHTS PAGE (PREMIUM)
+   Layout same, colors & styling upgraded
+   ===================================== */
+
+.allFlightsPage{
+    margin: 13vh 0 0 0;
+    height: fit-content;
+    width: 100%;
+
+    background: radial-gradient(circle at top,
+        #020617 0%,
+        #0b1120 40%,
+        #020617 100%);
+    padding-bottom: 8vh;
+}
+
+.allFlightsPage h1{
+    color: #e0f2fe;
+    margin-left: 3vw;
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+
+/* GRID WRAPPER */
+.allFlights{
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+    padding-bottom: 5vh;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 30px;
+}
+
+/* SINGLE FLIGHT CARD */
+.allFlights-Flight{
+    background: radial-gradient(circle at top left,
+        rgba(15, 23, 42, 0.95),
+        rgba(15, 23, 42, 0.88));
+    width: 90%;
+    margin-left: 5%;
+    padding: 3vh 2vw;
+    border-radius: 0.9rem;
+
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.9);
+
+    transition: all 0.25s ease;
+}
+
+.allFlights-Flight:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 28px 65px rgba(15, 23, 42, 0.85);
+}
+
+.allFlights-Flight span{
+    display: flex;
+    gap: 25px;
+}
+
+/* TEXT */
+.allFlights-Flight p{
+    margin: 0;
+    margin-bottom: 3px;
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}
+
+.allFlights-Flight p b{
+    font-weight: 600;
+    color: #e5f0ff;
+}
+
+/* EXTRA DETAILS (LIST) */
+.allFlights-Flight ol{
+    margin: 0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.allFlights-Flight ol b{
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+/* BUTTON (IF ANY, LIKE VIEW / BOOK NOW) */
+.allFlights-Flight button{
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    border: none;
+    border-radius: 0.6rem;
+    color: #f9fafb;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+    transition: all 0.25s ease;
+}
+
+.allFlights-Flight button:hover{
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(56, 189, 248, 0.55);
+}
+
+.allFlights-Flight button:active{
+    transform: scale(0.97);
+    box-shadow: 0 10px 24px rgba(56, 189, 248, 0.4);
+}
